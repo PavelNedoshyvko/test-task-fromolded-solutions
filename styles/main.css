@@ -902,4 +902,125 @@ body {
   font-size: 18px;
 }
 
+.contact-us-second-part {
+  padding-top: 50px;
+  padding-bottom: 284px;
+}
+@media (min-width: 1440px) {
+  .contact-us-second-part {
+    position: relative;
+    padding-top: 0;
+    padding-bottom: 215px;
+  }
+}
+
+.contact-us-connect-title {
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 13px;
+  font-size: 28px;
+}
+@media (min-width: 1440px) {
+  .contact-us-connect-title {
+    max-width: 599px;
+    margin: 0;
+    margin-bottom: 40px;
+    font-size: 34px;
+    text-align: start;
+  }
+}
+
+.contact-us-connect-txt {
+  max-width: 396px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 38px;
+  font-family: "Poppins", sans-serif;
+}
+@media (min-width: 1440px) {
+  .contact-us-connect-txt {
+    max-width: 584px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 49px;
+    font-size: 24px;
+    text-align: start;
+  }
+}
+
+.contact-us-connect-photo-wrap {
+  width: 100%;
+  max-width: 358px;
+  height: 358px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 61px;
+  border-radius: 50%;
+  background-color: #f77307;
+  overflow: hidden;
+}
+@media (min-width: 1440px) {
+  .contact-us-connect-photo-wrap {
+    position: absolute;
+    top: 50%;
+    left: 800px;
+    transform: translateY(-50%);
+    max-width: 416px;
+    height: 416px;
+    box-shadow: 0px -100px 300px 45px rgba(34, 48, 255, 0.4);
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+}
+@media (min-width: 1440px) {
+  .form {
+    align-items: flex-start;
+  }
+}
+
+.form-input {
+  width: 100%;
+  max-width: 391px;
+  height: 62px;
+  padding-left: 23px;
+  padding-right: 16px;
+  background-color: #101d4f;
+  text-align: start;
+}
+@media (min-width: 1440px) {
+  .form-input {
+    max-width: 477px;
+  }
+}
+.form-input.textarea {
+  height: 197px;
+  padding-top: 17px;
+}
+
+.form-submit-btn {
+  width: 100%;
+  max-width: 391px;
+  height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, #3b34a1 0%, #e1400f 100%);
+  text-transform: capitalize;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-submit-btn:hover, .form-submit-btn:focus {
+  color: #f77307;
+}
+@media (min-width: 1440px) {
+  .form-submit-btn {
+    max-width: 477px;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */

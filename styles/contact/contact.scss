@@ -1,0 +1,197 @@
+@import "../mixins.scss";
+
+// .contact-us-fist-part {
+//   padding-top: 118px;
+//   padding-bottom: 119px;
+//   background-color: $contact-us-bg-color;
+
+//   @include viewport-desktop {
+//     padding-top: 63px;
+//     padding-bottom: 56px;
+//   }
+// }
+
+// .contact-us-wrap {
+//   @include viewport-desktop {
+//     display: flex;
+//     align-items: center;
+//     gap: 69px;
+//   }
+// }
+
+// .contact-us-title {
+//   max-width: 300px;
+//   margin-left: auto;
+//   margin-right: auto;
+//   margin-bottom: 25px;
+//   font-size: 28px;
+
+//   @include viewport-desktop {
+//     max-width: 531px;
+//     margin-bottom: 0;
+//     font-size: 34px;
+//     text-align: start;
+//   }
+// }
+
+// .contact-us-txt {
+//   max-width: 387px;
+//   margin-left: auto;
+//   margin-right: auto;
+//   margin-bottom: 59px;
+//   font-family: "Poppins", sans-serif;
+
+//   @include viewport-desktop {
+//     max-width: 419px;
+//     text-align: start;
+//   }
+// }
+
+// .contact-us-card-list {
+//   display: flex;
+//   flex-direction: column;
+//   gap: 30px;
+
+//   @include viewport-desktop {
+//     flex-direction: row;
+//     gap: 104px;
+//   }
+// }
+
+// .contact-us-card-photo-wrap {
+//   width: 156px;
+//   height: 156px;
+//   margin-left: auto;
+//   margin-right: auto;
+//   margin-bottom: 9px;
+//   border-radius: 50%;
+//   background-color: $photo-color;
+//   box-shadow: 0px 0px 100px 45px rgba(0, 17, 255, 0.32);
+
+//   @include viewport-desktop {
+//     width: 154px;
+//     height: 154px;
+
+//     &.first,
+//     &.second {
+//       margin-bottom: 57px;
+//     }
+//     &.third {
+//       margin-bottom: 26px;
+//     }
+//   }
+// }
+
+// .contact-us-card-title {
+//   width: 183px;
+//   margin-left: auto;
+//   margin-right: auto;
+//   font-size: 34px;
+// }
+
+.contact-us-second-part {
+  padding-top: 50px;
+  padding-bottom: 284px;
+
+  @include viewport-desktop {
+    position: relative;
+    padding-top: 0;
+    padding-bottom: 215px;
+  }
+}
+
+.contact-us-connect-title {
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 13px;
+  font-size: 28px;
+
+  @include viewport-desktop {
+    max-width: 599px;
+    margin: 0;
+    margin-bottom: 40px;
+    font-size: 34px;
+    text-align: start;
+  }
+}
+
+.contact-us-connect-txt {
+  max-width: 396px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 38px;
+  font-family: "Poppins", sans-serif;
+
+  @include viewport-desktop {
+    max-width: 584px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 49px;
+    font-size: 24px;
+    text-align: start;
+  }
+}
+
+.contact-us-connect-photo-wrap {
+  width: 100%;
+  max-width: 358px;
+  height: 358px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 61px;
+  border-radius: 50%;
+  background-color: $photo-color;
+  overflow: hidden;
+
+  @include viewport-desktop {
+    position: absolute;
+    top: 50%;
+    left: 800px;
+    transform: translateY(-50%);
+    max-width: 416px;
+    height: 416px;
+    box-shadow: 0px -100px 300px 45px rgba(34, 48, 255, 0.4);
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+
+  @include viewport-desktop {
+    align-items: flex-start;
+  }
+}
+
+.form-input {
+  width: 100%;
+  max-width: 391px;
+  height: 62px;
+  padding-left: 23px;
+  padding-right: 16px;
+  background-color: $input-bg-color;
+  text-align: start;
+
+  @include viewport-desktop {
+    max-width: 477px;
+  }
+
+  &.textarea {
+    height: 197px;
+    padding-top: 17px;
+  }
+}
+
+.form-submit-btn {
+  width: 100%;
+  max-width: 391px;
+  height: 62px;
+  @include btn;
+
+  @include viewport-desktop {
+    max-width: 477px;
+  }
+}
