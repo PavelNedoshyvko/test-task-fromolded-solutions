@@ -1,17 +1,271 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="keywords"
+      content="fietsverhuur, huur fietsen, racefietsen huren, mountainbikes huren, stadsfietsen huren, fietsverhuur Nederland"
+    />
     <meta
       name="description"
-      content="This is a brief description of the content of this webpage."
+      content="Domain is de beste fietsverhuurservice van Nederland. Huur race-, mountainbike- en stadsfietsen voor elke smaak."
     />
-    <title>Catalog</title>
-    <link rel="stylesheet" href="styles/main.css" />
+    <title>Domain | Fietsverhuur – Snel en gemakkelijk</title>
+    <link rel="icon" href="../img/bicycle.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles/main.css" />
   </head>
   <body>
-    <h1 class="title">Catalog Page</h1>
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <a href="../index.html" class="logo">
+            <svg class="logo-icon" width="44" height="44">
+              <use href="../img/icons.svg#icon-bicycle"></use>
+            </svg>
+            Domain</a
+          >
+          <div class="nav-wrap">
+            <button
+              type="button"
+              class="burger-menu-btn js-open-menu"
+              type="button"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+            >
+              <svg class="burger-menu-icon" width="53" height="35">
+                <use href="../img/icons.svg#icon-burger-menu"></use>
+              </svg>
+            </button>
+            <ul class="list">
+              <li>
+                <a class="link" href="../index.html">Startpagina</a>
+              </li>
+              <li>
+                <a class="link" href="../contact/index.html">Contact</a>
+              </li>
+            </ul>
+            <a href="../catalog/index.html" class="rent-btn">
+              Huur een fiets
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="catalog container">
+        <h2 class="catalog-title">Catalogus</h2>
+        <ul class="catalog-list">
+          <li class="card">
+            <div class="card-img-wrap">
+              <img
+                class="card-img"
+                src="../img/bike-1.webp"
+                alt="Bike 1"
+                width="400"
+              />
+            </div>
+            <div class="card-desc">
+              <h3>Bulls</h3>
+              <p>$20</p>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card-img-wrap">
+              <img
+                class="card-img"
+                src="../img/bike-2.webp"
+                alt="Bike 2"
+                width="400"
+              />
+            </div>
+            <div class="card-desc">
+              <h3>Velocity Cycles</h3>
+              <p>$50</p>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card-img-wrap">
+              <img
+                class="card-img"
+                src="../img/bike-3.webp"
+                alt="Bike 3"
+                width="400"
+              />
+            </div>
+            <div class="card-desc">
+              <h3>TrailBlaze</h3>
+              <p>$10</p>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card-img-wrap">
+              <img
+                class="card-img"
+                src="../img/bike-4.webp"
+                alt="Bike 4"
+                width="400"
+              />
+            </div>
+            <div class="card-desc">
+              <h3>UrbanRider</h3>
+              <p>$5</p>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card-img-wrap">
+              <img
+                class="card-img"
+                src="../img/bike-5.webp"
+                alt="Bike 5"
+                width="400"
+              />
+            </div>
+            <div class="card-desc">
+              <h3>Peak Wheels</h3>
+              <p>$15</p>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card-img-wrap">
+              <img
+                class="card-img"
+                src="../img/bike-6.webp"
+                alt="Bike 6"
+                width="400"
+              />
+            </div>
+            <div class="card-desc">
+              <h3>CycloCraft</h3>
+              <p>$35</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer" id="footer">
+      <div class="container">
+        <a href="./index.html" class="logo">
+          <svg class="logo-icon" width="44" height="44">
+            <use href="../img/icons.svg#icon-bicycle"></use>
+          </svg>
+          Domain
+        </a>
+        <div class="footer-info">
+          <div>
+            <h3 class="footer-info-title">Snelle links</h3>
+            <ul class="footer-info-list">
+              <li>
+                <a href="../index.html" class="footer-info-link">Startpagina</a>
+              </li>
+              <li>
+                <a href="../contact/index.html" class="footer-info-link"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a href="../catalog/index.html" class="footer-info-link"
+                  >Catalogus</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="company-inofmation-wrap">
+            <h3 class="footer-info-title">Bedrijfsinformatie</h3>
+            <ul class="footer-info-list">
+              <li class="footer-info-item phone">
+                <svg class="footer-info-list-icon" width="24" height="24">
+                  <use href="../img/icons.svg#icon-phone"></use>
+                </svg>
+                <p class="footer-info-link">+1-800-ZEKER</p>
+              </li>
+              <li class="footer-info-item mail">
+                <svg class="footer-info-list-icon" width="21" height="15">
+                  <use href="../img/icons.svg#icon-mail"></use>
+                </svg>
+                <a
+                  class="footer-info-link"
+                  href="mailto:contact@guardiantech.com"
+                  >domain@domain.com
+                </a>
+              </li>
+              <li class="footer-info-item address">
+                <svg class="footer-info-list-icon" width="16" height="20">
+                  <use href="../img/icons.svg#icon-point"></use>
+                </svg>
+                <a
+                  class="footer-info-link"
+                  href="https://www.google.com/maps/place/Black+Bikes+%7C+Bike+Rental+at+the+Red+Light+District+in+Amsterdam/@52.3747311,4.8949569,16.72z/data=!4m15!1m8!3m7!1s0x47c609c7a94c86ed:0x7eeb715f05fabbeb!2zU2ludCBOaWNvbGFhc3N0cmFhdCAyNCwgMTAxMiBOSyBBbXN0ZXJkYW0sINCd0LjQtNC10YDQu9Cw0L3QtNGL!3b1!8m2!3d52.3750405!4d4.8931243!16s%2Fg%2F11cpgh0v_m!3m5!1s0x47c609b8f260b227:0xe44b42b4b338ef64!8m2!3d52.373878!4d4.8976505!16s%2Fg%2F11b7r7dgyd?entry=ttu&g_ep=EgoyMDI0MDgyMC4xIKXMDSoASAFQAw%3D%3D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Oudekerksplein 62, 1012 HA Amsterdam <br />
+                  46000, Nederland</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="footer-info-title">Carrières</h3>
+            <span class="join-team">Sluit je aan bij ons team</span>
+            <p class="footer-info-txt">
+              Geïnteresseerd om deel uit te maken van de fietsverhuurrevolutie?
+              Bezoek onze Carrièrepagina om de huidige vacatures te bekijken en
+              word onderdeel van ons dynamische team bij Domain.
+            </p>
+          </div>
+        </div>
+        <span>© 2024 Domain. Alle rechten voorbehouden.</span>
+      </div>
+    </footer>
+
+    <!-- MOBILE MENU -->
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-close-btn js-close-menu" type="button">
+        <svg class="x-close-icon" width="24" height="24">
+          <use href="../img/icons.svg#icon-x-close"></use>
+        </svg>
+      </button>
+      <div class="menu-wrap">
+        <nav class="nav">
+          <ul class="list mobile-menu">
+            <li class="item">
+              <a class="link js-close-menu" href="../index.html">Startpagina</a>
+            </li>
+            <li class="item">
+              <a class="link js-close-menu" href="#about-us">Over ons</a>
+            </li>
+            <li class="item">
+              <a class="link js-close-menu" href="#services">Diensten</a>
+            </li>
+            <li class="item">
+              <a class="link js-close-menu" href="#footer">Hulpbron</a>
+            </li>
+            <li class="item">
+              <a class="link js-close-menu" href="../contact/index.html"
+                >Contact</a
+              >
+            </li>
+            <li class="item">
+              <a class="link js-close-menu" href="../catalog/index.html"
+                >Catalogus</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/mobile-menu.js"></script>
   </body>
 </html>

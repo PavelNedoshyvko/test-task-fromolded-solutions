@@ -1023,4 +1023,43 @@ body {
   }
 }
 
+.catalog {
+  padding-bottom: 100px;
+}
+
+.catalog-title {
+  margin-bottom: 50px;
+  font-size: 36px;
+}
+
+.catalog-list {
+  display: grid;
+  gap: 30px;
+}
+@media (min-width: 1440px) {
+  .catalog-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card {
+  border: 2px solid #fff;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.card-img-wrap {
+  height: 265px;
+}
+
+.card-img {
+  width: 400px;
+  height: 265px;
+  object-fit: cover;
+}
+
+.card-desc {
+  padding: 30px;
+}
+
 /*# sourceMappingURL=main.css.map */
