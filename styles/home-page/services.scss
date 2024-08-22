@@ -1,0 +1,147 @@
+.services {
+  padding-bottom: 242px;
+
+  @include viewport-desktop {
+    padding-bottom: 215px;
+  }
+}
+
+.services-title {
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  font-size: 28px;
+
+  @include viewport-desktop {
+    max-width: 800px;
+    margin-bottom: 50px;
+    font-size: 38px;
+  }
+}
+
+.services-txt {
+  font-family: "Poppins", sans-serif;
+  max-width: 398px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 103px;
+
+  @include viewport-desktop {
+    min-width: 950px;
+    margin-bottom: 100px;
+    font-size: 24px;
+  }
+}
+
+.services-card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 137px;
+
+  @include viewport-desktop {
+    flex-direction: row;
+    gap: 30px;
+    background: radial-gradient(
+      circle,
+      rgb(53, 53, 255) 0%,
+      rgba(0, 21, 49, 0.5) 40%
+    );
+  }
+}
+
+.services-card-item {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  height: 416px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 400px;
+    height: 416px;
+    border-radius: 25px;
+    background-color: $card-secondary-bg-color;
+    transform: rotate(-5deg);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 400px;
+    height: 416px;
+    border-radius: 25px;
+    background-color: $card-primary-bg-color;
+    transform: rotate(-175deg);
+  }
+}
+
+.services-card-photo-wrap {
+  position: absolute;
+  top: -72px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 218px;
+  height: 218px;
+  border-radius: 50%;
+  background-color: $photo-color;
+  z-index: 1;
+  overflow: hidden;
+
+  @include viewport-desktop {
+    top: -55px;
+    width: 180px;
+    height: 180px;
+  }
+}
+
+.services-card-title {
+  position: absolute;
+  top: 157px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 310px;
+  font-size: 28px;
+  z-index: 1;
+}
+
+.services-card-txt {
+  position: absolute;
+  top: 206px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 324px;
+  font-family: "Poppins", sans-serif;
+  z-index: 1;
+}
+
+.services-card-learn-more-btn {
+  position: absolute;
+  top: 326px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  color: $hero-icon-count;
+  z-index: 1;
+  transition: $transition-time;
+
+  & .arrow-right {
+    fill: currentColor;
+  }
+
+  &:hover,
+  &:focus {
+    color: $icon-color;
+  }
+}

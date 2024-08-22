@@ -1,0 +1,103 @@
+.footer {
+  padding-top: 119px;
+  padding-bottom: 65px;
+  background-color: $footer-bg-color;
+
+  @include viewport-desktop {
+    padding-top: 86px;
+    padding-bottom: 72px;
+  }
+}
+
+.footer .logo {
+  margin-bottom: 119px;
+  font-size: 28px;
+
+  @include viewport-desktop {
+    margin-bottom: 69px;
+    font-size: 34px;
+  }
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  gap: 198px;
+  margin-bottom: 150px;
+
+  @include viewport-desktop {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 95px;
+    margin-bottom: 208px;
+    text-align: start;
+  }
+}
+
+.footer-info-title {
+  margin-bottom: 60px;
+  font-size: 28px;
+}
+
+.footer-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+}
+
+.footer-info-link {
+  font-family: "Poppins", sans-serif;
+  transition: $transition-time;
+
+  &:hover,
+  &:focus {
+    color: $link-hover-color;
+  }
+}
+
+.footer-info-list-icon {
+  fill: $icon-color;
+}
+
+.company-inofmation-wrap {
+  width: 100%;
+  max-width: 351px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include viewport-desktop {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.footer-info-item {
+  display: flex;
+  align-items: center;
+
+  &.phone {
+    gap: 30px;
+  }
+  &.mail {
+    gap: 33px;
+  }
+  &.address {
+    gap: 38px;
+    text-align: start;
+  }
+}
+
+.join-team {
+  display: block;
+  margin-bottom: 28px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.footer-info-txt {
+  max-width: 330px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}

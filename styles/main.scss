@@ -1,1 +1,14 @@
-@use "./catalog/catalog.scss";
+@import "../styles/fonts.scss";
+@import "../styles/reset.scss";
+@import "../styles/base.scss";
+@import "../styles/vars.scss";
+@import "../styles/home-page/header.scss";
+@import "../styles/home-page/hero.scss";
+@import "../styles/home-page/about-us.scss";
+@import "../styles/home-page/services.scss";
+@import "../styles/home-page/footer.scss";
+@import "../styles/home-page/mobile-menu.scss";
+// @import "./components/about-us.scss";
+// @import "./components/services.scss";
+// @import "./components/contact-us.scss";
+// @import "./components/footer.scss";

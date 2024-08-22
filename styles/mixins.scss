@@ -1,0 +1,19 @@
+@mixin viewport-desktop {
+  @media (min-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $btn-bg-color;
+  text-transform: capitalize;
+  transition: $transition-time;
+
+  &:hover,
+  &:focus {
+    color: $link-hover-color;
+  }
+}

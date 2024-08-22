@@ -1,22 +1,421 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="keywords"
+      content="fietsverhuur, huur fietsen, racefietsen huren, mountainbikes huren, stadsfietsen huren, fietsverhuur Nederland"
+    />
     <meta
       name="description"
-      content="This is a brief description of the content of this webpage."
+      content="Domain is de beste fietsverhuurservice van Nederland. Huur race-, mountainbike- en stadsfietsen voor elke smaak."
     />
-    <title>Document</title>
+    <title>Domain | Fietsverhuur – Snel en gemakkelijk</title>
     <link rel="icon" href="../img/bicycle.svg" type="image/x-icon" />
     <link rel="stylesheet" href="../styles/main.css" />
   </head>
   <body>
-    <h1 class="title">Test Page</h1>
-    <a href="../catalog/index.html">To Catalog</a>
-    <div class="wrap">
-      <img src="../img/hero.webp" alt="" width="400" />
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <a href="../index.html" class="logo">
+            <svg class="logo-icon" width="44" height="44">
+              <use href="../img/icons.svg#icon-bicycle"></use>
+            </svg>
+            Domain</a
+          >
+          <div class="nav-wrap">
+            <button
+              type="button"
+              class="burger-menu-btn js-open-menu"
+              type="button"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+            >
+              <svg class="burger-menu-icon" width="53" height="35">
+                <use href="../img/icons.svg#icon-burger-menu"></use>
+              </svg>
+            </button>
+            <ul class="list">
+              <li>
+                <a class="link" href="../index.html">Startpagina</a>
+              </li>
+              <li>
+                <a class="link" href="#about-us">Over ons</a>
+              </li>
+              <li>
+                <a class="link" href="#services">Diensten</a>
+              </li>
+              <li>
+                <a class="link" href="#footer">Hulpbron</a>
+              </li>
+              <li>
+                <a class="link" href="../contact/index.html">Contact</a>
+              </li>
+            </ul>
+            <a href="../catalog/index.html" class="rent-btn">
+              Huur een fiets
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO -->
+
+      <section class="hero">
+        <div class="container">
+          <div class="hero-first-part-wrap">
+            <h1 class="hero-title">Geef uw reis kracht met premiumfietsen</h1>
+            <p class="hero-txt">
+              Ontdek ongeëvenaarde vrijheid met Domain – uw partner bij het
+              verkennen van de stad, het verbeteren van uw avonturen en het
+              onvergetelijk maken van elke rit.
+            </p>
+            <div class="hero-img-wrap">
+              <img
+                class="hero-img"
+                src="../img/hero.webp"
+                alt="Fietsenstalling"
+                width="400"
+              />
+            </div>
+            <div class="hero-btn-wrap">
+              <a href="../catalog/index.html" class="rent-bike-btn"
+                >Huur een fiets</a
+              >
+              <a href="../contact/index.html" class="contact-btn">Contact</a>
+            </div>
+          </div>
+          <ul class="hero-photo-list">
+            <li class="hero-photo-item">
+              <div class="hero-photo-item-wrap">
+                <img
+                  src="../img/wide-ange-of-bike-options.webp"
+                  alt="Een man en veel fietsen"
+                  width="150"
+                />
+              </div>
+              <span class="hero-photo-item-txt">
+                Breed scala aan fietsopties</span
+              >
+            </li>
+            <li class="hero-photo-item">
+              <div class="hero-photo-item-wrap">
+                <img
+                  src="../img/flexible-rental-plans.webp"
+                  alt="Veel lachende mensen"
+                  width="150"
+                />
+              </div>
+              <span class="hero-photo-item-txt">Flexibele huurplannen</span>
+            </li>
+            <li class="hero-photo-item">
+              <div class="hero-photo-item-wrap">
+                <img
+                  src="../img/booking.webp"
+                  alt="Veel lachende mensen"
+                  width="150"
+                />
+              </div>
+              <span class="hero-photo-item-txt">
+                Naadloze boekingservaring</span
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="hero-icon-section">
+          <ul class="hero-icon-section-list container">
+            <li class="hero-icon-section-item">
+              <div class="hero-icon-wrap first">
+                <svg class="hero-icon" width="50" height="46">
+                  <use href="../img/icons.svg#icon-cart"></use>
+                </svg>
+              </div>
+              <div>
+                <span class="hero-icon-count">500+</span>
+                <span class="hero-icon-descr">Fietsmodellen</span>
+              </div>
+            </li>
+            <li class="hero-icon-section-item">
+              <div class="hero-icon-wrap second">
+                <svg class="hero-icon" width="40" height="50">
+                  <use href="../img/icons.svg#icon-paper-1"></use>
+                </svg>
+              </div>
+              <div>
+                <span class="hero-icon-count">100K+</span>
+                <span class="hero-icon-descr">Klanten door heel Nederland</span>
+              </div>
+            </li>
+            <li class="hero-icon-section-item">
+              <div class="hero-icon-wrap third">
+                <svg class="hero-icon" width="56" height="57">
+                  <use href="../img/icons.svg#icon-dollar"></use>
+                </svg>
+              </div>
+              <div>
+                <span class="hero-icon-count">350+</span>
+                <span class="hero-icon-descr"
+                  >Specialisten in fietsverhuur</span
+                >
+              </div>
+            </li>
+            <li class="hero-icon-section-item">
+              <div class="hero-icon-wrap fourth">
+                <svg class="hero-icon" width="50" height="58">
+                  <use href="../img/icons.svg#icon-paper-2"></use>
+                </svg>
+              </div>
+              <div>
+                <span class="hero-icon-count">100%</span>
+                <span class="hero-icon-descr">Klantbehoudpercentage</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ABOUT US -->
+
+      <section class="about-us container" id="about-us">
+        <div class="about-us-wrap">
+          <h2 class="about-us-title">Leidend in fietsverhuur</h2>
+          <p class="about-us-txt">
+            Met jarenlange ervaring en een toewijding aan uitmuntendheid biedt
+            Domain de beste fietsverhuurservices op maat voor al uw behoeften.
+            Bij Domain begrijpen we de uiteenlopende behoeften van onze klanten
+            en streven we ernaar om uitzonderlijke oplossingen te bieden die uw
+            fietservaring plezierig en probleemloos maken.
+          </p>
+          <div class="about-us-photo-wrap">
+            <img
+              src="../img/leadingl-the-way-in-bicycle-rentals.webp"
+              alt="Veel lachende mensen"
+              width="515"
+            />
+          </div>
+          <p class="about-us-txt second-part">
+            Ons team bij Domain streeft ernaar om fietsen van topkwaliteit en
+            een ongeëvenaarde klantenservice te leveren. Zo zorgen we ervoor dat
+            elke rit met Domain een onvergetelijk avontuur is.
+          </p>
+          <button type="button" class="about-us-read-more-btn">
+            Read More
+          </button>
+        </div>
+      </section>
+
+      <!-- SERVICES -->
+
+      <section class="services container" id="services">
+        <h2 class="services-title">
+          Ons uitgebreide aanbod van fietsverhuurdiensten
+        </h2>
+        <p class="services-txt">
+          From city cruisers to mountain bikes, our services cover all your
+          biking needs to ensure an exceptional riding experience. At Domain, we
+          offer a wide selection of high-quality bicycles, flexible rental
+          plans, and convenient booking options to cater to every adventure.
+          Whether you're planning a leisurely ride or an intense biking
+          excursion, Domain is your go-to partner for all things bike rental,
+          providing you with unparalleled service and the perfect ride every
+          time.
+        </p>
+
+        <ul class="services-card-list">
+          <li class="services-card-item">
+            <div class="services-card-photo-wrap">
+              <img
+                src="../img/comfortable-bike.webp"
+                alt="Comfortabele fiets"
+                width="218"
+              />
+            </div>
+            <h3 class="services-card-title">Vind uw ideale fiets</h3>
+            <p class="services-card-txt">
+              At Domain, we match you with the perfect bike for a smooth and
+              enjoyable ride.
+            </p>
+            <button type="button" class="services-card-learn-more-btn">
+              Meer informatie
+              <svg class="arrow-right" width="18" height="14">
+                <use href="../img/icons.svg#icon-arrow-right"></use>
+              </svg>
+            </button>
+          </li>
+          <li class="services-card-item">
+            <div class="services-card-photo-wrap">
+              <img
+                src="../img/quick-bike-assistant.webp"
+                alt="Fiets reparatie"
+                width="218"
+              />
+            </div>
+            <h3 class="services-card-title">Snelle fietshulp</h3>
+            <p class="services-card-txt">
+              Snelle ondersteuning om eventuele problemen op te lossen en een
+              soepele rit te garanderen.
+            </p>
+            <button type="button" class="services-card-learn-more-btn">
+              Meer informatie
+              <svg class="arrow-right" width="18" height="14">
+                <use href="../img/icons.svg#icon-arrow-right"></use>
+              </svg>
+            </button>
+          </li>
+          <li class="services-card-item">
+            <div class="services-card-photo-wrap">
+              <img
+                src="../img/rental-compliance.webp"
+                alt="Huurnaleving"
+                width="218"
+              />
+            </div>
+            <h3 class="services-card-title">Huurnaleving</h3>
+            <p class="services-card-txt">
+              Zorg ervoor dat uw huurfiets voldoet aan alle veiligheids- en
+              regelgevingsnormen.
+            </p>
+            <button type="button" class="services-card-learn-more-btn">
+              Meer informatie
+              <svg class="arrow-right" width="18" height="14">
+                <use href="../img/icons.svg#icon-arrow-right"></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer class="footer" id="footer">
+      <div class="container">
+        <a href="./index.html" class="logo">
+          <svg class="logo-icon" width="44" height="44">
+            <use href="../img/icons.svg#icon-bicycle"></use>
+          </svg>
+          Domain
+        </a>
+        <div class="footer-info">
+          <div>
+            <h3 class="footer-info-title">Snelle links</h3>
+            <ul class="footer-info-list">
+              <li>
+                <a href="#about-us" class="footer-info-link">Over ons</a>
+              </li>
+              <li>
+                <a href="#services" class="footer-info-link">Diensten</a>
+              </li>
+              <li>
+                <a href="../contact/index.html" class="footer-info-link"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a href="../catalog/index.html" class="footer-info-link"
+                  >Catalogus</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="company-inofmation-wrap">
+            <h3 class="footer-info-title">Bedrijfsinformatie</h3>
+            <ul class="footer-info-list">
+              <li class="footer-info-item phone">
+                <svg class="footer-info-list-icon" width="24" height="24">
+                  <use href="../img/icons.svg#icon-phone"></use>
+                </svg>
+                <p class="footer-info-link">+1-800-ZEKER</p>
+              </li>
+              <li class="footer-info-item mail">
+                <svg class="footer-info-list-icon" width="21" height="15">
+                  <use href="../img/icons.svg#icon-mail"></use>
+                </svg>
+                <a
+                  class="footer-info-link"
+                  href="mailto:contact@guardiantech.com"
+                  >domain@domain.com
+                </a>
+              </li>
+              <li class="footer-info-item address">
+                <svg class="footer-info-list-icon" width="16" height="20">
+                  <use href="../img/icons.svg#icon-point"></use>
+                </svg>
+                <a
+                  class="footer-info-link"
+                  href="https://www.google.com/maps/place/Black+Bikes+%7C+Bike+Rental+at+the+Red+Light+District+in+Amsterdam/@52.3747311,4.8949569,16.72z/data=!4m15!1m8!3m7!1s0x47c609c7a94c86ed:0x7eeb715f05fabbeb!2zU2ludCBOaWNvbGFhc3N0cmFhdCAyNCwgMTAxMiBOSyBBbXN0ZXJkYW0sINCd0LjQtNC10YDQu9Cw0L3QtNGL!3b1!8m2!3d52.3750405!4d4.8931243!16s%2Fg%2F11cpgh0v_m!3m5!1s0x47c609b8f260b227:0xe44b42b4b338ef64!8m2!3d52.373878!4d4.8976505!16s%2Fg%2F11b7r7dgyd?entry=ttu&g_ep=EgoyMDI0MDgyMC4xIKXMDSoASAFQAw%3D%3D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Oudekerksplein 62, 1012 HA Amsterdam <br />
+                  46000, Nederland</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="footer-info-title">Carrières</h3>
+            <span class="join-team">Sluit je aan bij ons team</span>
+            <p class="footer-info-txt">
+              Geïnteresseerd om deel uit te maken van de fietsverhuurrevolutie?
+              Bezoek onze Carrièrepagina om de huidige vacatures te bekijken en
+              word onderdeel van ons dynamische team bij Domain.
+            </p>
+          </div>
+        </div>
+        <span>© 2024 Domain. Alle rechten voorbehouden.</span>
+      </div>
+    </footer>
+
+    <!-- MOBILE MENU -->
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-close-btn js-close-menu" type="button">
+        <svg class="x-close-icon" width="24" height="24">
+          <use href="../img/icons.svg#icon-x-close"></use>
+        </svg>
+      </button>
+      <div class="menu-wrap">
+        <nav class="nav">
+          <ul class="list mobile-menu">
+            <li class="item">
+              <a class="link js-close-menu" href="../index.html">Startpagina</a>
+            </li>
+            <li class="item">
+              <a class="link js-close-menu" href="#about-us">Over ons</a>
+            </li>
+            <li class="item">
+              <a class="link js-close-menu" href="#services">Diensten</a>
+            </li>
+            <li class="item">
+              <a class="link js-close-menu" href="#footer">Hulpbron</a>
+            </li>
+            <li class="item">
+              <a class="link js-close-menu" href="../contact/index.html"
+                >Contact</a
+              >
+            </li>
+            <li class="item">
+              <a class="link js-close-menu" href="../catalog/index.html"
+                >Catalogus</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/mobile-menu.js"></script>
   </body>
 </html>

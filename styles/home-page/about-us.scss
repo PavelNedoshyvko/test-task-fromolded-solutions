@@ -1,0 +1,99 @@
+@import "../mixins.scss";
+
+.about-us {
+  padding-top: 131px;
+  padding-bottom: 271px;
+
+  @include viewport-desktop {
+    padding-top: 215px;
+    padding-bottom: 215px;
+  }
+}
+
+.about-us-wrap {
+  @include viewport-desktop {
+    position: relative;
+    height: 457px;
+  }
+}
+
+.about-us-title {
+  font-size: 28px;
+  margin-bottom: 11px;
+
+  @include viewport-desktop {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 550px;
+    margin-bottom: 0;
+    font-size: 38px;
+    text-align: start;
+  }
+}
+
+.about-us-txt {
+  margin-bottom: 49px;
+
+  @include viewport-desktop {
+    position: absolute;
+    top: 110px;
+    right: 0;
+    width: 570px;
+    margin-bottom: 0;
+    font-size: 20px;
+    text-align: start;
+  }
+
+  &.second-part {
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 42px;
+
+    @include viewport-desktop {
+      position: absolute;
+      top: 260px;
+      right: 0;
+      min-width: 570px;
+      margin-bottom: 0;
+      font-size: 18px;
+      text-align: start;
+    }
+  }
+}
+
+.about-us-photo-wrap {
+  max-width: 399px;
+  height: 355px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 49px;
+  border-radius: 35px;
+  background-color: $photo-color;
+  overflow: hidden;
+
+  @include viewport-desktop {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    min-width: 515px;
+    height: 457px;
+    box-shadow: 50px -50px 100px 45px rgba(0, 17, 255, 0.2);
+  }
+}
+
+.about-us-read-more-btn {
+  width: 199px;
+  height: 52px;
+  margin-left: auto;
+  margin-right: auto;
+  @include btn;
+
+  @include viewport-desktop {
+    position: absolute;
+    bottom: 0;
+    left: 690px;
+  }
+}
