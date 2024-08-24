@@ -17,7 +17,7 @@
     font-size: 48px;
     margin-left: 0;
     margin-right: 0;
-    margin-bottom: 80px;
+    margin-bottom: 20px;
   }
 }
 
@@ -28,10 +28,22 @@
 
   @include viewport-desktop {
     max-width: 628px;
-    margin-bottom: 112px;
+    margin-bottom: 30px;
     text-align: start;
     font-size: 24px;
   }
+}
+
+.hero-address {
+  display: none;
+  @include viewport-desktop {
+    display: block;
+  }
+}
+
+.footer-info-list.top {
+  gap: 15px;
+  margin-bottom: 30px;
 }
 
 .hero-img-wrap {

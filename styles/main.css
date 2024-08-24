@@ -284,7 +284,7 @@ body {
     font-size: 48px;
     margin-left: 0;
     margin-right: 0;
-    margin-bottom: 80px;
+    margin-bottom: 20px;
   }
 }
 
@@ -296,10 +296,24 @@ body {
 @media (min-width: 1440px) {
   .hero-txt {
     max-width: 628px;
-    margin-bottom: 112px;
+    margin-bottom: 30px;
     text-align: start;
     font-size: 24px;
   }
+}
+
+.hero-address {
+  display: none;
+}
+@media (min-width: 1440px) {
+  .hero-address {
+    display: block;
+  }
+}
+
+.footer-info-list.top {
+  gap: 15px;
+  margin-bottom: 30px;
 }
 
 .hero-img-wrap {
